@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.containers-container {
+  display: flex;
+}
+
+#student-container {
+  width: 40vw;
+  height: 80vh;
+  border: 2px solid yellowgreen;
+}
+
+#lesson-container {
+  width: 40vw;
+  height: 80vh;
+  border: 2px solid maroon;
+}
+
+#students {
+  /* display: flex;
+  flex-direction: column; */
+  width: 90%;
+  height: 90%;
+  border: 2px solid #222;
+}
+
+#lessons {
+  /* display: flex;
+  flex-direction: column; */
+  width: 90%;
+  height: 90%;
+  border: 2px solid #222;
+}
