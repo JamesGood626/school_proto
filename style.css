@@ -42,3 +42,16 @@ body {
   height: 90%;
   border: 2px solid #222;
 }
+
+.delete-mode {
+  animation: flash-red 2s ease-out infinite;
+}
+
+@keyframes flash-red {
+  0% {
+    color: #222;
+  }
+  50% {
+    color: red;
+  }
+}

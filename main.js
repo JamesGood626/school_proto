@@ -74,6 +74,20 @@ Controller.prototype.appendToUnorderedList = function(value) {
 };
 
 Controller.prototype.toggleDelete = function() {
+  const elements = this.htmlUnorderedList.childNodes;
+  if (this.deleteMode) {
+    // remove .delete-mode class
+    Array.from(elements).map(el => {
+      el.classList = this.name;
+    });
+  } else {
+    // add .delete-mode class
+    Array.from(elements).map(el => {
+      console.log("classList: ", Array.from(el.classList));
+      // el.classList;
+      el.classList = [...Array.from(el.classList), "delete-mode"].join(" ");
+    });
+  }
   this.deleteMode = !this.deleteMode;
 };
 
